@@ -1,6 +1,6 @@
 package myUe7;
 
-@CreationInfo(description="Diese Klasse ist sinnlos", tags={"Annotationen","Test"})
+@CreationInfo(author="Test Author",description="Diese Klasse ist sinnlos", tags={"Annotationen","Test"})
 public class AnnotationTest {
 	public void foo(){
 		
