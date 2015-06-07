@@ -16,5 +16,6 @@ public class App {
 		System.out.println("author: "+ creationInfo.author());
 		System.out.println("description: "+ creationInfo.description());
 		System.out.println("tags: " + Arrays.toString(creationInfo.tags()));
+		System.out.println("baseclass: " + creationInfo.baseclass());
 	}
 }

@@ -12,5 +12,5 @@ public @interface CreationInfo {
 	String author() default "MY AUTHOR";
 	String description();
 	String[] tags() default {};
-
+	Class<?> baseclass() default Object.class;
 }
