@@ -12,7 +12,8 @@ public @interface CreationInfo {
 	String author() default "MY AUTHOR";
 	String description();
 	String[] tags() default {};
+	//Der Grund ist, weil alle Vererbung von Object sind 
 	Class<?> baseclass() default Object.class;
-	Class<?>[] interfaces() default Object.class;
-
+	//Weil null class nicht möglich ist
+	Class<?>[] interfaces() default {};
 }
