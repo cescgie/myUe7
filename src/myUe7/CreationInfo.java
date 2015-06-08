@@ -13,4 +13,6 @@ public @interface CreationInfo {
 	String description();
 	String[] tags() default {};
 	Class<?> baseclass() default Object.class;
+	Class[] interfaces() default Object.class;
+
 }
