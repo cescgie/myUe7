@@ -11,19 +11,11 @@ public class App {
 		CreationInfo creationInfo =
 				AnnotationTest.class.getAnnotation(CreationInfo.class);
 		if(creationInfo !=null){
-			//printCreationInfo(creationInfo);
 			readNextClass(creationInfo);
 		}else{
 			System.out.println("Keine " + CreationInfo.class.getSimpleName() +
 					"-Annotation vorhanden.");
 		}
-	}
-	private static void printCreationInfo(CreationInfo creationInfo){
-		System.out.println("author: "+ creationInfo.author());
-		System.out.println("description: "+ creationInfo.description());
-		System.out.println("tags: " + Arrays.toString(creationInfo.tags()));
-		System.out.println("baseclass: " + creationInfo.baseclass());
-		System.out.println("interfaces: " + Arrays.toString(creationInfo.interfaces()));
 	}
 	//Source http://stackoverflow.com/questions/20362493/how-to-get-annotation-class-name-attribute-values-using-reflection
 	private static void readNextClass(CreationInfo creationInfo) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException{
